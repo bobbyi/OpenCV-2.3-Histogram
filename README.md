@@ -13,3 +13,6 @@ Usage
     $ make
     $ ./hist
     All tests passed
+    
+The code should also compile with Visual Studio, if you perfer, although 
+this is currently untested (please report any problems).
