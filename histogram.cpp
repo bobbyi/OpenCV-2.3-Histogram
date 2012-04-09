@@ -50,9 +50,9 @@ void test_histogram()
         const double diff = abs(actual_value - expected_value);
         if (diff > .001)
         {
-            cout << "Value for bucket " << (bucket + 1) << " did not match" << endl;
-            cout << "\tExpected: " << expected_value << endl;
-            cout << "\tGot: " << actual_value << endl;
+            cerr << "Value for bucket " << (bucket + 1) << " did not match" << endl;
+            cerr << "\tExpected: " << expected_value << endl;
+            cerr << "\tGot: " << actual_value << endl;
             exit(1);
         }
     }
@@ -62,5 +62,6 @@ void test_histogram()
 int main() 
 {
     test_histogram();
+    cout << "All tests passed" << endl;
     return 0;
 }
